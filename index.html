@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Specialty Coffee & Artisan Bakery</title>
+  
+  <!-- Google Fonts: Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Outfit', 'sans-serif'] },
+          colors: {
+            coffee: {
+              50: '#fdf8f6',
+              100: '#f2e8e5',
+              200: '#eaddd7',
+              600: '#8c533e',
+              700: '#73402f',
+              800: '#4a281e',
+              900: '#2b1711',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body class="font-sans bg-coffee-50 text-stone-800 antialiased">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-coffee-900 text-coffee-100 text-xs py-2 px-6 text-center">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <span><i class="fa-solid fa-location-dot me-2 text-coffee-600"></i> Open Daily: 7:00 AM – 11:00 PM</span>
+      <a href="ar.html" class="font-bold hover:text-white flex items-center gap-1.5 transition">
+        <i class="fa-solid fa-globe text-coffee-600"></i>
+        <span>العربية</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-coffee-100">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-coffee-800 text-white flex items-center justify-center font-bold text-lg shadow">
+          ☕
+        </div>
+        <div>
+          <span class="text-xl font-extrabold text-coffee-900 block leading-tight">AURA</span>
+          <span class="text-[10px] tracking-widest text-coffee-600 uppercase font-semibold">Specialty Coffee</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-stone-700">
+        <a href="#about" class="hover:text-coffee-600 transition">Our Story</a>
+        <a href="#menu" class="hover:text-coffee-600 transition">Menu</a>
+        <a href="#specialties" class="hover:text-coffee-600 transition">Specialties</a>
+        <a href="#visit" class="hover:text-coffee-600 transition">Visit Us</a>
+      </nav>
+
+      <a href="https://wa.me/447000000000?text=Hello%20I%20would%20like%20to%20order" target="_blank" class="bg-coffee-700 hover:bg-coffee-800 text-white text-xs font-bold px-5 py-2.5 rounded-full transition shadow flex items-center gap-2">
+        <i class="fa-brands fa-whatsapp text-sm text-green-400"></i>
+        <span>Order on WhatsApp</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative py-20 lg:py-28 bg-coffee-900 text-white overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="inline-block px-3.5 py-1 mb-6 text-xs font-bold tracking-wider uppercase text-coffee-200 bg-coffee-800/80 rounded-full border border-coffee-700">
+          ✨ Freshly Roasted Single-Origin Beans
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+          Crafted Coffee & Fresh Artisan Bakery
+        </h1>
+        <p class="text-base sm:text-lg text-coffee-200 leading-relaxed mb-8 max-w-lg">
+          Experience world-class brews, sourdough pastries, and a warm atmosphere curated for true coffee lovers.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#menu" class="bg-coffee-600 hover:bg-coffee-700 text-white font-bold px-7 py-3.5 rounded-full transition shadow-lg">
+            Explore Menu
+          </a>
+          <a href="#visit" class="bg-coffee-800 hover:bg-coffee-700 text-white font-bold px-7 py-3.5 rounded-full border border-coffee-700 transition">
+            Find Location
+          </a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-coffee-800">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="Coffee Cup" class="w-full h-80 lg:h-96 object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-coffee-600 font-bold uppercase tracking-wider text-xs">Carefully Crafted</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-coffee-900 mt-2 mb-4">Our Signature Menu</h2>
+        <p class="text-stone-600 text-sm">Made fresh every morning using premium ingredients and artisanal beans.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Hot & Cold Brews -->
+        <div class="bg-coffee-50 p-8 rounded-3xl border border-coffee-100">
+          <h3 class="text-xl font-bold text-coffee-900 mb-6 flex items-center gap-2">
+            <i class="fa-solid fa-mug-hot text-coffee-600"></i> Specialty Coffee
+          </h3>
+          <div class="space-y-6">
+            <div class="flex justify-between items-baseline border-b border-coffee-200/60 pb-3">
+              <div>
+                <h4 class="font-bold text-coffee-900">V60 Pour Over</h4>
+                <p class="text-xs text-stone-500">Ethiopia / Colombia Single Origin</p>
+              </div>
+              <span class="font-bold text-coffee-700">£4.50</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-coffee-200/60 pb-3">
+              <div>
+                <h4 class="font-bold text-coffee-900">Flat White</h4>
+                <p class="text-xs text-stone-500">Double shot espresso with silky micro-foam</p>
+              </div>
+              <span class="font-bold text-coffee-700">£3.80</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-coffee-200/60 pb-3">
+              <div>
+                <h4 class="font-bold text-coffee-900">Spanish Iced Latte</h4>
+                <p class="text-xs text-stone-500">Espresso sweetened with condensed milk over ice</p>
+              </div>
+              <span class="font-bold text-coffee-700">£4.80</span>
+            </div>
+            <div class="flex justify-between items-baseline">
+              <div>
+                <h4 class="font-bold text-coffee-900">Cold Brew Reserve</h4>
+                <p class="text-xs text-stone-500">18-hour slow steep, citrus and floral notes</p>
+              </div>
+              <span class="font-bold text-coffee-700">£4.20</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artisan Bakery -->
+        <div class="bg-coffee-50 p-8 rounded-3xl border border-coffee-100">
+          <h3 class="text-xl font-bold text-coffee-900 mb-6 flex items-center gap-2">
+            <i class="fa-solid fa-bread-slice text-coffee-600"></i> Fresh Bakery & Bites
+          </h3>
+          <div class="space-y-6">
+            <div class="flex justify-between items-baseline border-b border-coffee-200/60 pb-3">
+              <div>
+                <h4 class="font-bold text-coffee-900">French Butter Croissant</h4>
+                <p class="text-xs text-stone-500">Flaky, golden, baked fresh every morning</p>
+              </div>
+              <span class="font-bold text-coffee-700">£3.20</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-coffee-200/60 pb-3">
+              <div>
+                <h4 class="font-bold text-coffee-900">Pistachio Babka</h4>
+                <p class="text-xs text-stone-500">Rich twisted brioche with crushed pistachios</p>
+              </div>
+              <span class="font-bold text-coffee-700">£4.60</span>
+            </div>
+            <div class="flex justify-between items-baseline border-b border-coffee-200/60 pb-3">
+              <div>
+                <h4 class="font-bold text-coffee-900">San Sebastian Cheesecake</h4>
+                <p class="text-xs text-stone-500">Caramelized crust with a silky molten center</p>
+              </div>
+              <span class="font-bold text-coffee-700">£5.40</span>
+            </div>
+            <div class="flex justify-between items-baseline">
+              <div>
+                <h4 class="font-bold text-coffee-900">Avocado & Poached Egg Toast</h4>
+                <p class="text-xs text-stone-500">Sourdough slice with chili flakes and seeds</p>
+              </div>
+              <span class="font-bold text-coffee-700">£6.90</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours Section -->
+  <section id="visit" class="py-20 bg-coffee-900 text-white">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
+      <div class="p-6 rounded-2xl bg-coffee-800 border border-coffee-700">
+        <div class="text-3xl text-coffee-400 mb-3"><i class="fa-solid fa-map-pin"></i></div>
+        <h3 class="font-bold text-lg mb-2">Our Location</h3>
+        <p class="text-sm text-coffee-200">24 Market Street, Bolton, BL1 1AA</p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-coffee-800 border border-coffee-700">
+        <div class="text-3xl text-coffee-400 mb-3"><i class="fa-solid fa-clock"></i></div>
+        <h3 class="font-bold text-lg mb-2">Opening Hours</h3>
+        <p class="text-sm text-coffee-200">Mon - Fri: 7:00 AM - 10:00 PM<br>Sat - Sun: 8:00 AM - 11:00 PM</p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-coffee-800 border border-coffee-700">
+        <div class="text-3xl text-coffee-400 mb-3"><i class="fa-brands fa-whatsapp"></i></div>
+        <h3 class="font-bold text-lg mb-2">Direct Contact</h3>
+        <p class="text-sm text-coffee-200">Takeaway & Inquiries<br>+44 7000 000000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-950 text-stone-500 py-8 text-xs text-center border-t border-stone-900">
+    <p>© 2026 AURA Specialty Coffee. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
