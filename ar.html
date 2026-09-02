@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>مقهى أورا | قهوة مختصة ومخبوزات طازجة</title>
+  <title id="page-title">قهوة مختصة ومخبوزات طازجة</title>
   
   <!-- Google Fonts: Cairo -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@
   <!-- Top Announcement Bar -->
   <div class="bg-coffee-900 text-coffee-100 text-xs py-2 px-6">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <span><i class="fa-solid fa-location-dot ms-2 text-coffee-600"></i> نفتح يومياً: من 7:00 صباحاً حتى 11:00 مساءً</span>
+      <span id="top-hours"><i class="fa-solid fa-location-dot ms-2 text-coffee-600"></i> نفتح يومياً: من 7:00 صباحاً حتى 11:00 مساءً</span>
       <a href="index.html" class="font-bold hover:text-white flex items-center gap-1.5 transition">
         <i class="fa-solid fa-globe text-coffee-600"></i>
         <span>English</span>
@@ -51,23 +51,22 @@
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-coffee-100">
     <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-coffee-800 text-white flex items-center justify-center font-bold text-lg shadow">
+        <div id="brand-icon" class="w-10 h-10 rounded-full bg-coffee-800 text-white flex items-center justify-center font-bold text-lg shadow">
           ☕
         </div>
         <div>
-          <span class="text-xl font-extrabold text-coffee-900 block leading-tight">أورا كافيه</span>
-          <span class="text-[10px] tracking-widest text-coffee-600 uppercase font-semibold">قهوة مختصة ومخبوزات</span>
+          <span id="nav-brand-name" class="text-xl font-extrabold text-coffee-900 block leading-tight">أورا كافيه</span>
+          <span id="nav-brand-subtitle" class="text-[10px] tracking-widest text-coffee-600 uppercase font-semibold">قهوة مختصة ومخبوزات</span>
         </div>
       </a>
 
       <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-stone-700">
         <a href="#about" class="hover:text-coffee-600 transition">قصتنا</a>
         <a href="#menu" class="hover:text-coffee-600 transition">قائمة المنيو</a>
-        <a href="#specialties" class="hover:text-coffee-600 transition">المميزات</a>
         <a href="#visit" class="hover:text-coffee-600 transition">زورونا</a>
       </nav>
 
-      <a href="https://wa.me/447000000000?text=مرحباً%20أود%20الطلب" target="_blank" class="bg-coffee-700 hover:bg-coffee-800 text-white text-xs font-bold px-5 py-2.5 rounded-full transition shadow flex items-center gap-2">
+      <a id="nav-whatsapp-btn" href="https://wa.me/447000000000?text=مرحباً%20أود%20الطلب" target="_blank" class="bg-coffee-700 hover:bg-coffee-800 text-white text-xs font-bold px-5 py-2.5 rounded-full transition shadow flex items-center gap-2">
         <i class="fa-brands fa-whatsapp text-sm text-green-400"></i>
         <span>الطلب عبر واتساب</span>
       </a>
@@ -75,20 +74,20 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="relative py-20 lg:py-28 bg-coffee-900 text-white overflow-hidden">
+  <section id="about" class="relative py-20 lg:py-28 bg-coffee-900 text-white overflow-hidden">
     <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
       <div>
-        <span class="inline-block px-3.5 py-1 mb-6 text-xs font-bold tracking-wider uppercase text-coffee-200 bg-coffee-800/80 rounded-full border border-coffee-700">
+        <span id="hero-badge" class="inline-block px-3.5 py-1 mb-6 text-xs font-bold tracking-wider uppercase text-coffee-200 bg-coffee-800/80 rounded-full border border-coffee-700">
           ✨ محاصيل مختصة محمصة طازجة
         </span>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+        <h1 id="hero-title" class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
           قهوة محضرة بعناية ومخبوزات طازجة يومياً
         </h1>
-        <p class="text-base sm:text-lg text-coffee-200 leading-relaxed mb-8 max-w-lg">
+        <p id="hero-subtitle" class="text-base sm:text-lg text-coffee-200 leading-relaxed mb-8 max-w-lg">
           استمتع بألذ أنواع القهوة المختصة والمخبوزات الفرنسية الفاخرة في أجواء هادئة ومميزة مصممة لعشاق المذاق الأصيل.
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href="#menu" class="bg-coffee-600 hover:bg-coffee-700 text-white font-bold px-7 py-3.5 rounded-full transition shadow-lg">
+          <a id="hero-cta-btn" href="#menu" class="bg-coffee-600 hover:bg-coffee-700 text-white font-bold px-7 py-3.5 rounded-full transition shadow-lg">
             استعرض المنيو
           </a>
           <a href="#visit" class="bg-coffee-800 hover:bg-coffee-700 text-white font-bold px-7 py-3.5 rounded-full border border-coffee-700 transition">
@@ -109,81 +108,23 @@
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center max-w-2xl mx-auto mb-16">
         <span class="text-coffee-600 font-bold uppercase tracking-wider text-xs">قائمتنا المختارة</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-coffee-900 mt-2 mb-4">قائمة المشروبات والمخبوزات</h2>
-        <p class="text-stone-600 text-sm">نحضر كل طبق وكوب بحب وشغف باستخدام أفضل المكونات الطبيعية.</p>
+        <h2 id="menu-title" class="text-3xl sm:text-4xl font-extrabold text-coffee-900 mt-2 mb-4">قائمة المشروبات والمخبوزات</h2>
+        <p id="menu-subtitle" class="text-stone-600 text-sm">نحضر كل طبق وكوب بحب وشغف باستخدام أفضل المكونات الطبيعية.</p>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-10">
-        <!-- Hot & Cold Brews -->
+      <div id="menu-grid" class="grid md:grid-cols-2 gap-10">
+        <!-- Fallback block -->
         <div class="bg-coffee-50 p-8 rounded-3xl border border-coffee-100">
           <h3 class="text-xl font-bold text-coffee-900 mb-6 flex items-center gap-2">
-            <i class="fa-solid fa-mug-hot text-coffee-600"></i> القهوة المختصة
+            <i class="fa-solid fa-mug-hot text-coffee-600"></i> القهوة والمشروبات
           </h3>
           <div class="space-y-6">
             <div class="flex justify-between items-baseline border-b border-coffee-200/60 pb-3">
               <div>
-                <h4 class="font-bold text-coffee-900">قهوة مقطرة V60</h4>
-                <p class="text-xs text-stone-500">محاصيل إثيوبية / كولومبية فاخرة</p>
+                <h4 class="font-bold text-coffee-900">قهوة مختصة</h4>
+                <p class="text-xs text-stone-500">محاصيل طازجة يومياً</p>
               </div>
-              <span class="font-bold text-coffee-700">18 ر.س</span>
-            </div>
-            <div class="flex justify-between items-baseline border-b border-coffee-200/60 pb-3">
-              <div>
-                <h4 class="font-bold text-coffee-900">فلات وايت</h4>
-                <p class="text-xs text-stone-500">دبل شوت إسبريسو مع حليب مبخر بقوام مخملي</p>
-              </div>
-              <span class="font-bold text-coffee-700">16 ر.س</span>
-            </div>
-            <div class="flex justify-between items-baseline border-b border-coffee-200/60 pb-3">
-              <div>
-                <h4 class="font-bold text-coffee-900">سبانش لاتيه بارد</h4>
-                <p class="text-xs text-stone-500">مزيج القهوة والحليب المحلى المنعش مع الثلج</p>
-              </div>
-              <span class="font-bold text-coffee-700">20 ر.س</span>
-            </div>
-            <div class="flex justify-between items-baseline">
-              <div>
-                <h4 class="font-bold text-coffee-900">كولد برو</h4>
-                <p class="text-xs text-stone-500">قهوة باردة منقوعة ببطء لمدة 18 ساعة</p>
-              </div>
-              <span class="font-bold text-coffee-700">19 ر.س</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bakery -->
-        <div class="bg-coffee-50 p-8 rounded-3xl border border-coffee-100">
-          <h3 class="text-xl font-bold text-coffee-900 mb-6 flex items-center gap-2">
-            <i class="fa-solid fa-bread-slice text-coffee-600"></i> المخبوزات والحلويات
-          </h3>
-          <div class="space-y-6">
-            <div class="flex justify-between items-baseline border-b border-coffee-200/60 pb-3">
-              <div>
-                <h4 class="font-bold text-coffee-900">كرواسون بالزبدة الفرنسية</h4>
-                <p class="text-xs text-stone-500">هش ومقرمش يخبز طازجاً كل صباح</p>
-              </div>
-              <span class="font-bold text-coffee-700">14 ر.س</span>
-            </div>
-            <div class="flex justify-between items-baseline border-b border-coffee-200/60 pb-3">
-              <div>
-                <h4 class="font-bold text-coffee-900">بابكا الفستق</h4>
-                <p class="text-xs text-stone-500">عجينة بريوش غنية بحشوة الفستق المقرمشة</p>
-              </div>
-              <span class="font-bold text-coffee-700">19 ر.س</span>
-            </div>
-            <div class="flex justify-between items-baseline border-b border-coffee-200/60 pb-3">
-              <div>
-                <h4 class="font-bold text-coffee-900">سان سيباستيان تشيز كيك</h4>
-                <p class="text-xs text-stone-500">قوام كريمي غني مع طبقة كراميل مميزة</p>
-              </div>
-              <span class="font-bold text-coffee-700">24 ر.س</span>
-            </div>
-            <div class="flex justify-between items-baseline">
-              <div>
-                <h4 class="font-bold text-coffee-900">توست الأفوكادو والبيض</h4>
-                <p class="text-xs text-stone-500">شريحة خبز الساوردو مع الأفوكادو وبذور الشيا</p>
-              </div>
-              <span class="font-bold text-coffee-700">28 ر.س</span>
+              <span class="font-bold text-coffee-700">طازج</span>
             </div>
           </div>
         </div>
@@ -197,27 +138,109 @@
       <div class="p-6 rounded-2xl bg-coffee-800 border border-coffee-700">
         <div class="text-3xl text-coffee-400 mb-3"><i class="fa-solid fa-map-pin"></i></div>
         <h3 class="font-bold text-lg mb-2">موقع الفرع</h3>
-        <p class="text-sm text-coffee-200">طريق الملك عبدالعزيز، حي النخيل، الرياض</p>
+        <p id="visit-address" class="text-sm text-coffee-200">الفرع الرئيسي</p>
       </div>
 
       <div class="p-6 rounded-2xl bg-coffee-800 border border-coffee-700">
         <div class="text-3xl text-coffee-400 mb-3"><i class="fa-solid fa-clock"></i></div>
         <h3 class="font-bold text-lg mb-2">ساعات العمل</h3>
-        <p class="text-sm text-coffee-200">السبت - الخميس: 7:00 ص - 11:30 م<br>الجمعة: 1:00 م - 12:00 م</p>
+        <p class="text-sm text-coffee-200">يومياً: 7:00 ص - 11:30 م</p>
       </div>
 
       <div class="p-6 rounded-2xl bg-coffee-800 border border-coffee-700">
         <div class="text-3xl text-coffee-400 mb-3"><i class="fa-brands fa-whatsapp"></i></div>
         <h3 class="font-bold text-lg mb-2">الطلبات والاستفسار</h3>
-        <p class="text-sm text-coffee-200">خدمة الاستلام والطلبات السريعة<br>+966 50 000 0000</p>
+        <p id="visit-contact" class="text-sm text-coffee-200">خدمة الاستلام والطلبات السريعة</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-stone-950 text-stone-500 py-8 text-xs text-center border-t border-stone-900">
-    <p>© 2026 مقهى أورا للقهوة المختصة. جميع الحقوق محفوظة.</p>
+    <p id="footer-copyright">© 2026 جميع الحقوق محفوظة.</p>
   </footer>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch('./data.json?v=' + Date.now())
+        .then(res => {
+          if (!res.ok) throw new Error("لم يتم العثور على data.json");
+          return res.json();
+        })
+        .then(data => {
+          if (data.business_name) {
+            document.title = `${data.business_name} | مقهى ومخبوزات`;
+            const navName = document.getElementById('nav-brand-name');
+            if (navName) navName.innerText = data.business_name;
+            const copy = document.getElementById('footer-copyright');
+            if (copy) copy.innerText = `© ${new Date().getFullYear()} ${data.business_name}. جميع الحقوق محفوظة.`;
+          }
+
+          if (data.hero) {
+            if (data.hero.title) document.getElementById('hero-title').innerText = data.hero.title;
+            if (data.hero.subtitle) document.getElementById('hero-subtitle').innerText = data.hero.subtitle;
+            if (data.hero.cta_button) {
+              const cta = document.getElementById('hero-cta-btn');
+              if (cta) cta.innerText = data.hero.cta_button;
+            }
+          }
+
+          if (data.about?.description) {
+            const sub = document.getElementById('menu-subtitle');
+            if (sub) sub.innerText = data.about.description;
+          }
+
+          if (Array.isArray(data.services) && data.services.length > 0) {
+            const mGrid = document.getElementById('menu-grid');
+            if (mGrid) {
+              mGrid.innerHTML = '';
+              const half = Math.ceil(data.services.length / 2);
+              const col1 = data.services.slice(0, half);
+              const col2 = data.services.slice(half);
+
+              const renderCol = (items, categoryTitle, icon) => {
+                const colDiv = document.createElement('div');
+                colDiv.className = "bg-coffee-50 p-8 rounded-3xl border border-coffee-100";
+                let itemsHtml = items.map(it => `
+                  <div class="flex justify-between items-baseline border-b border-coffee-200/60 pb-3">
+                    <div>
+                      <h4 class="font-bold text-coffee-900">${it.title || 'صنف'}</h4>
+                      <p class="text-xs text-stone-500">${it.description || ''}</p>
+                    </div>
+                    <span class="font-bold text-coffee-700">طازج</span>
+                  </div>
+                `).join('');
+                
+                colDiv.innerHTML = `
+                  <h3 class="text-xl font-bold text-coffee-900 mb-6 flex items-center gap-2">
+                    <i class="fa-solid ${icon} text-coffee-600"></i> ${categoryTitle}
+                  </h3>
+                  <div class="space-y-6">${itemsHtml}</div>
+                `;
+                return colDiv;
+              };
+
+              mGrid.appendChild(renderCol(col1, 'القهوة والمشروبات المختصة', 'fa-mug-hot'));
+              if (col2.length > 0) {
+                mGrid.appendChild(renderCol(col2, 'المخبوزات والحلويات الطازجة', 'fa-bread-slice'));
+              }
+            }
+          }
+
+          if (data.contact?.phone) {
+            const cleanPhone = data.contact.phone.replace(/[^0-9]/g, '');
+            const waBtn = document.getElementById('nav-whatsapp-btn');
+            if (waBtn && cleanPhone) {
+              waBtn.href = `https://wa.me/${cleanPhone}?text=مرحباً%20أود%20الطلب`;
+            }
+            const contactP = document.getElementById('visit-contact');
+            if (contactP) {
+              contactP.innerHTML = `الطلبات المباشرة والاستفسار<br>${data.contact.phone}`;
+            }
+          }
+        })
+        .catch(err => console.warn("الاعتماد على النصوص الافتراضية:", err));
+    });
+  </script>
 </body>
 </html>
